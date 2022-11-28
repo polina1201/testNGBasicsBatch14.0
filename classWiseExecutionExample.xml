@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/polin/SDETBatch14JavaNew/testNGBasicsBatch14.0/src/test/java/Class02/HardAssertions.java">
+        <classes>
+            <class name="Class01.EnableDisable"></class>
+            <class name="Class02.ExamplesAssertion"></class>
+            <class name="Class01.Priority"></class>
+        </classes>
+    </test>
+</suite>

@@ -191,7 +191,8 @@ if in a single test case your assertion fails, even then the rest of assertions 
 
 Gives us control to execute our classes/test cases in specified manner
 
-How to create testNG XMl???
+
+***************How to create testNG XMl???
 goto plugins
 install the plugin createTestNG XML
 

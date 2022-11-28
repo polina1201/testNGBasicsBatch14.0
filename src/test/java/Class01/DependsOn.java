@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 public class DependsOn {
     @Test
     public void Login(){
-        System.out.println(4/0); //must be a String in order to pass; i.e. ("Sample")
+        System.out.println(6/0); //must be a String in order to pass; i.e. ("Sample")
 
     }
     @Test (dependsOnMethods = {"Login"}) //this method will only execute if "Login" passes

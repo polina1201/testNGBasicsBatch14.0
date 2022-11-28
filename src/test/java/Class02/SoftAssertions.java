@@ -37,7 +37,7 @@ public class SoftAssertions {
         WebElement errorMSG = driver.findElement(By.xpath("//span[text()='Invalid credentials']"));
         String ActualErrorMsg = errorMSG.getText();
         String ExpectedErrorMsg = "Invalid credential";
-//        if we want use soft Assertion we call it from the class SoftAssert by declaring an instance
+//        if we want to use soft Assertion we call it from the class SoftAssert by declaring an instance
         SoftAssert soft =new SoftAssert();
 //        assertion
         soft.assertEquals(ActualErrorMsg,ExpectedErrorMsg);

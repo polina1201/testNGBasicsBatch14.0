@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 public class testNGExample {
     public static WebDriver driver;
     //writing down all the pre-conditions for a test case
-    @BeforeMethod
+    @BeforeMethod (alwaysRun = true)
     public void SetupBrowser(){
         WebDriverManager.chromedriver().setup();
         driver=new ChromeDriver();
@@ -24,7 +24,7 @@ public class testNGExample {
     }
 
     //    post conditions for test case
-    @AfterMethod
+    @AfterMethod (alwaysRun = true)
     public void closeBrowser() throws InterruptedException {
         Thread.sleep(3000);
         driver.quit();
@@ -34,7 +34,7 @@ public class testNGExample {
     //    goto syntax Hrms
     //    enter the username and password , verify that u logged in
     //    close the browser
-    @Test
+    @Test (groups="smoke")
     public void LoginFunctionality(){
         WebElement userName = driver.findElement(By.xpath("//input[@name='txtUsername']"));
         userName.sendKeys("admin");

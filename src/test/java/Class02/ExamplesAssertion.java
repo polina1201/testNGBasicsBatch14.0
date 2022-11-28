@@ -13,8 +13,8 @@ import org.testng.asserts.SoftAssert;
 import java.util.concurrent.TimeUnit;
 
 public class ExamplesAssertion {
-    //    goto syntax hrms
-//    verify that login btn is dislayed
+    //    go to syntax hrms
+//    verify that login btn is displayed
 //    verify that login btn is Enabled
 //    close the browser
 

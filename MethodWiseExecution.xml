@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="MethodWiseExecution">
+        <classes>
+            <class name="Class01.Priority">
+                <methods>
+                    <include name="Atest"></include>
+                    <include name="Btest"></include>
+                    <include name="Ctest"></include>
+                    <exclude name="Dtest"></exclude>
+                    <include name="ABtest"></include>
+                </methods>
+            </class>
+            <class name="Class02.HardAssertions">
+                <methods>
+                    <include name="invalidCredentials"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
