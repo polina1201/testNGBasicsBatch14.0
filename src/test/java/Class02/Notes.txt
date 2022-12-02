@@ -147,7 +147,7 @@ to (alwaysRun=ture)
 
 ----------------------------------------------------revision----------------------------------------
 
-1. @Test --->we write all the test cases under this annotation
+1.@Test --->we write all the test cases under this annotation
 2.@Before method --> Precondition  (runs before every @TEST)
 3.@Aftermethod --> Post condition
 
